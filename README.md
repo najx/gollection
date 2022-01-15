@@ -1,6 +1,6 @@
-# Golang little projects
+# Golang Bootcamp 2021-2022 <img src="https://img.icons8.com/color/48/000000/golang.png" width="60" height="60"> 
 
-Repository containing several very small Golang projects written during Bootcamp sessions & learning session in which I've participated in 2021 and 2022.
+Repository containing several very small Golang projects written during bootcamps & learning session in which I've participated in 2021 and 2022.
 
 To execute those programs, you simply need to have a Golang installed (currently using v1.16.4) installed.
 
