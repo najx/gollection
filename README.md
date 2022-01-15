@@ -1,4 +1,4 @@
-# Golang collection <img src="https://img.icons8.com/color/48/000000/golang.png" width="60" height="60">
+# <img src="https://img.icons8.com/color/48/000000/golang.png" width="60" height="60"> Golang collection
 
 Repository containing several very small Golang projects written during bootcamps & learning session in which I've participated in 2021 and 2022.
 
