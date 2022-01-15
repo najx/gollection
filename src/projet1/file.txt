@@ -1,0 +1,35 @@
+Environnement GOPATH comme base : une des premières actions obligatoires lors de la programmation avec Go est d’ouvrir le répertoire GOPATH comprenant les trois sous-répertoires « src » (fichiers sources Go), « pkg » (paquet Go objets « package objects ») et « bin » (commandes exécutables).
+Tout code Go écrit peut être géré via cet espace de travail, y compris les dépendances correspondantes.
+L’emplacement de stockage de ce répertoire GOPATH obligatoire peut être choisi librement.
+Structure modulaire avec les paquets GOLANG (Packages) : dans Golang, les fichiers sources peuvent être organisés de manière modulaire via des répertoires, qui sont appelés Packages, soit des paquets.
+Le nom du répertoire respectif est donc aussi le nom du paquet auquel appartiennent tous les fichiers sources qui se trouvent dans ce répertoire.
+Si des fonctions, des types, etc. doivent être utilisés pour tous les paquets, il faut utiliser les majuscules de l’identificateur correspondant.
+Formatage uniforme et prédéfini du code : Golang donne certaines conventions pour le formatage du code, par exemple pour la distance exacte entre les éléments individuels.
+Ainsi, si vous avez appris à programmer des applications avec Golang, vous pouvez facilement lire le code d’autres développeurs sans avoir à déchiffrer leur style de formatage personnel, comme c'est le cas avec de nombreux autres langages. L’auteur n'est pas tenu de respecter le format jusque dans les moindres détails : l’outil intégré gofmt optimise automatiquement le code Golang écrit en corrigeant le formatage incorrect.
+Relative Importe comme standard : tous les fichiers et paquets que vous importez dans les projets Golang (que ce soit de votre propre projet ou celui d’un tiers) sont toujours relatifs au répertoire GOPATH/src, ce qui rend l’importation très facile. 
+De plus, Go ne compile pas les éléments importés à moins qu’ils ne soient réellement utilisés.
+De cette façon, un code propre est garanti même si les composants importés ne sont pas ou plus utilisés.
+Valeurs de retour multiples pour les fonctions et les méthodes :
+Go peut être utilisé pour créer des fonctions et des méthodes qui peuvent retourner plusieurs valeurs.
+Ceci permet à Go, par exemple, de séparer proprement un résultat valide d’une erreur de retour spécifiée de manière alternative. En C, par exemple, les erreurs d’écriture sont exprimées par une valeur de compteur négative, alors que le code d’erreur réel est enregistré séparément.
+Points forts et domaines d’applications de Golang
+De nombreux points forts de Golang ont déjà été mentionnés plus haut dans cet article : en raison de sa simplicité, le langage de Google offre aux développeurs un degré de simplicité élevé par rapport à de nombreux autres langages de programmation.
+Ceux qui ont intégré les bases bénéficient d'une opération simple et de nombreux automatismes, ce qui représente au final un gain de temps considérable.
+Avec ces outils, gofmt par exemple, à action individuelle, pour l’optimisation automatique du code, Go fournit également la réponse parfaite aux tâches qui sont de plus en plus complexes et qui doivent être maîtrisées dans le développement logiciel.
+De plus, le code de Golang est toujours formaté de la même manière, ce qui simplifie considérablement la lisibilité générale et donc le travail en équipe.
+Un autre point fort de la programmation Golang est la bonne performance du langage de programmation.
+La vitesse d’exécution des applications Go est généralement convaincante par rapport aux autres langages de compilation.
+Par exemple, la vitesse de compilation est à peu près la même que pour Java. Cependant, alors que de nombreuses applications Java s’appuient sur le framework Spring et prennent un certain temps à démarrer, par exemple pour répondre aux requêtes HTTP, les services Golang tirent parti des implémentations existantes de la bibliothèque standard, accélérant ainsi considérablement le processus de démarrage.
+Par conséquent, il n'est pas surprenant que Golang ait été utilisé jusqu'à présent principalement dans l’environnement des entreprises et des serveurs, où la stabilité et la performance des services jouent un rôle primordial.
+Le jeune langage de programmation est particulièrement demandé pour la virtualisation basée sur les conteneurs, ce qui est notamment dû au fait que Docker est probablement le représentant le plus important des plateformes conteneur basées sur Go.
+Où les autres langages de programmation ont-ils l’avantage ?
+Malgré toutes les éloges pour le langage de programmation moderne de Google, il ne faut cependant pas oublier de noter quelques faiblesses mineures.
+Celles-ci sont principalement dues à la simplicité de Golang, qui certes d'une part constitue la plus grande force du Golang, mais d’autre part fait que le langage ne possède pas certaines facettes que des développeurs apprécient dans d’autres langages de programmation.
+Tout d’abord, l’absence de types génériques (c’est-à-dire de types de données avec la possibilité de spécifier des paramètres de type individuels) dans la bibliothèque standard doit absolument être mentionnée.
+Ainsi, si vous êtes un partisan de la programmation de type et que vous avez l’habitude d’utiliser des génériques en Java, par exemple, vous devrez vous passer d’une fonctionnalité similaire dans Go jusqu’à présent (mais l’équipe Go n'exclut toutefois pas l’implémentation de types génériques dans une future version du langage).
+La renonciation aux classes, à l’héritage et aux constructeurs demande aussi un peu de temps pour s’y habituer et cela pour de nombreux développeurs.
+Une autre fonction de Go qui n'est pas toujours souhaitée est le masquage automatique des fichiers d’importation inactifs.
+D'autres langues marquent ici la possibilité de « commenter » les composants correspondants, de sorte qu'ils restent dans le code du programme malgré l’inactivité.
+Un autre inconvénient de Golang par rapport aux autres langues classiques comme C, C++ se trouve dans le fait que ce langage est encore assez récent.
+Il dispose donc d’un arsenal beaucoup plus réduit de paquets standards implémentés et prêts à l’importation.
+De plus, il y a beaucoup moins de manuels, de tutoriels pour Go sur Internet que pour les langages de programmation établis depuis longtemps.
