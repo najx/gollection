@@ -9,7 +9,7 @@ import (
 )
 
 func FindReplaceFile(src, old, new string) (occ int, lines []int, err error) {
-	var i int = 0
+	var i int = 1
 
 	if src == "" {
 		log.Fatal("src is null..")
@@ -43,7 +43,7 @@ func FindReplaceFile(src, old, new string) (occ int, lines []int, err error) {
 		i++
 	}
 	fmt.Printf("Number of occurences of Go: %d\n", occ)
-	fmt.Printf("Number of lines: %d\n", i)
+	fmt.Printf("Number of lines: %d\n", (i - 1))
 	return i, lines, err
 }
 
