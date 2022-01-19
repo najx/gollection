@@ -4,7 +4,7 @@ This repository contains some small Golang projects written during bootcamps & l
 
 To execute those programs, you simply need to have [Golang](https://go.dev/) installed (currently using v1.16.4) installed.
 
-- ##Projet 1 ([Goplace](https://github.com/najx/gollection/tree/master/src/projet1))
+- __Projet 1 ([Goplace](https://github.com/najx/gollection/tree/master/src/projet1))__
  ````
  .
  ├── README.md
