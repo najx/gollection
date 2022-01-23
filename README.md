@@ -12,7 +12,7 @@ To execute those programs, you simply need to have [Golang](https://go.dev/) ins
  └── main.go
  ````
 
-And run the program by typing <img src="https://img.icons8.com/color/48/000000/golang.png" width="40" height="40">:
+And run the program with <img src="https://img.icons8.com/color/48/000000/golang.png" width="40" height="40">:
 
 ````
 go run ./main.go
