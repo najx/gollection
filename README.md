@@ -4,7 +4,7 @@ This repository contains small Golang projects written during bootcamps & learni
 
 To execute those programs, you simply need to have [Golang](https://go.dev/) installed (currently using v1.16.4).
 
-- __Projet 1 ([Goplace](https://github.com/najx/gollection/tree/master/src/projet1))__
+- __Project 1 ([Goplace](https://github.com/najx/gollection/tree/master/src/projet1))__
  ````
  .
  ├── README.md
@@ -12,6 +12,20 @@ To execute those programs, you simply need to have [Golang](https://go.dev/) ins
  └── main.go
  ````
 
+- __Project 2 ([Hangman](https://github.com/najx/gollection/tree/master/src/project2))__
+ ````
+ .
+ ├── README.md
+ ├── dictionary
+ │   └── dictionary.go
+ ├── hangman
+ │   ├── display.go
+ │   ├── hangman.go
+ │   ├── hangman_test.go
+ │   └── input.go
+ ├── main.go
+ └── words.txt
+ ````
 And run the program with <img src="https://img.icons8.com/color/48/000000/golang.png" width="40" height="40">:
 
 ````
