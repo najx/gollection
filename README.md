@@ -32,6 +32,8 @@ And run the program with <img src="https://img.icons8.com/color/48/000000/golang
 go run ./main.go
 ````
 
+- [godoc](https://pkg.go.dev/)
+
 <!--
 Many thanks to:
  - ...
