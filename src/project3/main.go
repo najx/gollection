@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"training.go/dictionary/dictionary"
+	"dictionary/dictionary"
 )
 
 func main() {
