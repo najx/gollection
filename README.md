@@ -26,6 +26,18 @@ To execute those programs, you simply need to have [Golang](https://go.dev/) ins
  ├── main.go
  └── words.txt
  ````
+
+- __Project 3 ([Dictionnary](https://github.com/najx/gollection/tree/master/src/project3))__
+
+ ````
+ .
+ ├── README.md
+ ├── dictionary
+ │   ├── actions.go
+ │   └── dictionary.go
+ └── main.go
+ ````
+
 And run the program with <img src="https://img.icons8.com/color/48/000000/golang.png" width="40" height="40">:
 
 ````
