@@ -38,6 +38,26 @@ To execute those programs, you simply need to have [Golang](https://go.dev/) ins
  └── main.go
  ````
 
+- __Project 4 ([Certificate Generator](https://github.com/najx/gollection/tree/master/src/project4))__
+
+ ````
+.
+├── cert
+│   ├── cert.go
+│   ├── cert_test.go
+│   └── csvparser.go
+├── html
+│   └── certhtml.go
+├── img
+│   ├── background.png
+│   ├── gopher.png
+│   └── stamp.png
+├── main.go
+├── pdf
+│   └── certpdf.go
+└── students.csv
+ ````
+
 And run the program with <img src="https://img.icons8.com/color/48/000000/golang.png" width="40" height="40">:
 
 ````
