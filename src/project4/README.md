@@ -1,4 +1,6 @@
-This program is a certificates achievement generator that produces PDFs and HTML files.
+# Certificate Generator
+
+This program is a certificates achievement generator that produces **PDFs** and **HTML** files.
 
 It allow you to specify following parameters with CLI:
 
