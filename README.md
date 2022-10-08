@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/60783263/150000595-df36eb6b-c2c7-4e1d-87d9-da891c4fd89e.png" width="70" height="30">*llection*
+# <img src="https://user-images.githubusercontent.com/60783263/150000595-df36eb6b-c2c7-4e1d-87d9-da891c4fd89e.png" width="70" height="30">*llection* <img src="https://img.icons8.com/color/48/000000/golang.png" width="40" height="40">
 
 This repository contains small Golang projects written during bootcamps & learning sessions in which I've participated across 2021 and 2022.
 
@@ -58,8 +58,21 @@ To execute those programs, you simply need to have [Golang](https://go.dev/) ins
 └── students.csv
  ````
 
-And run the program with <img src="https://img.icons8.com/color/48/000000/golang.png" width="40" height="40">:
+- __Project 5 ([Image processor](https://github.com/najx/gollection/tree/master/src/project5))__
 
+ ````
+ .
+├── README.md
+├── filter
+│   └── filter.go
+├── main.go
+└── task
+    ├── chan.go
+    ├── task.go
+    └── waitgrp.go
+ ````
+
+Want to try running a project ?
 ````
 go run ./main.go
 ````
@@ -68,9 +81,7 @@ go run ./main.go
 ### Useful link:
 
 - [godoc](https://pkg.go.dev/)
+- [geeksforgeeks](https://www.geeksforgeeks.org/go-programming-language-introduction/)
 
-<!--
 Many thanks to:
- - ...
- - ...
--->
+ - Robin Penea - [github](https://github.com/synapticvoid)
