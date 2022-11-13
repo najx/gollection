@@ -72,6 +72,26 @@ To execute those programs, you simply need to have [Golang runtime](https://go.d
     └── waitgrp.go
  ````
 
+- __Project 6 ([Goflix](https://github.com/najx/gollection/tree/master/src/project6))__
+
+ ````
+├── Makefile
+├── go.mod
+├── go.sum
+├── main.go
+├── middlewares.go
+├── models.go
+├── routes.go
+├── routes_auth.go
+├── routes_movie.go
+├── routes_movie_test.go
+├── server.go
+├── store.go
+└── templates
+    ├── base.html
+    └── login.html
+ ````
+
 Want to try running a project ?
 ````
 go run ./main.go
