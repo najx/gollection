@@ -1,60 +1,60 @@
 package html
 
 import (
-	"fmt"
-	"html/template"
-	"os"
-	"path"
+  "fmt"
+  "html/template"
+  "os"
+  "path"
 
-	"training.go/gencert/cert"
+  "training.go/gencert/cert"
 )
 
 type HtmlSaver struct {
-	OutputDir string
+  OutputDir string
 }
 
 func New(outputdir string) (*HtmlSaver, error) {
-	var h *HtmlSaver
-	err := os.MkdirAll(outputdir, os.ModePerm)
-	if err != nil {
-		return h, nil
-	}
+  var h *HtmlSaver
+  err := os.MkdirAll(outputdir, os.ModePerm)
+  if err != nil {
+    return h, nil
+  }
 
-	h = &HtmlSaver{
-		OutputDir: outputdir,
-	}
-	return h, nil
+  h = &HtmlSaver{
+    OutputDir: outputdir,
+  }
+  return h, nil
 }
 
 func (p *HtmlSaver) Save(cert cert.Cert) error {
-	t, err := template.New("certificate").Parse(tpl)
-	if err != nil {
-		return err
-	}
+  t, err := template.New("certificate").Parse(tpl)
+  if err != nil {
+    return err
+  }
 
-	filename := fmt.Sprintf("%v.html", cert.LabelTitle)
-	path := path.Join(p.OutputDir, filename)
-	fmt.Println(path)
-	f, err := os.Create(path)
-	if err != nil {
-		return err
-	}
-	defer f.Close()
+  filename := fmt.Sprintf("%v.html", cert.LabelTitle)
+  path := path.Join(p.OutputDir, filename)
+  fmt.Println(path)
+  f, err := os.Create(path)
+  if err != nil {
+    return err
+  }
+  defer f.Close()
 
-	err = t.Execute(f, cert)
-	if err != nil {
-		return err
-	}
+  err = t.Execute(f, cert)
+  if err != nil {
+    return err
+  }
 
-	fmt.Printf("Saved certificate to '%v'\n", path)
-	return nil
+  fmt.Printf("Saved certificate to '%v'\n", path)
+  return nil
 }
 
 var tpl = `
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
         <title>{{.LabelTitle}}</title>
         <style>
             body {

@@ -1,43 +1,43 @@
 package dictionary
 
 import (
-	"fmt"
-	"time"
+  "fmt"
+  "time"
 
-	"github.com/dgraph-io/badger"
+  "github.com/dgraph-io/badger"
 )
 
 type Dictionary struct {
-	db *badger.DB
+  db *badger.DB
 }
 
 type Entry struct {
-	Word       string
-	Definition string
-	CreatedAt  time.Time
+  Word       string
+  Definition string
+  CreatedAt  time.Time
 }
 
 func (e Entry) String() string {
-	created := e.CreatedAt.Format(time.Stamp)
-	return fmt.Sprintf("%-10v\t%-50v%-6v", e.Word, e.Definition, created)
+  created := e.CreatedAt.Format(time.Stamp)
+  return fmt.Sprintf("%-10v\t%-50v%-6v", e.Word, e.Definition, created)
 }
 
 func New(dir string) (*Dictionary, error) {
-	opts := badger.DefaultOptions("./badger")
-	opts.Dir = dir
-	opts.ValueDir = dir
+  opts := badger.DefaultOptions("./badger")
+  opts.Dir = dir
+  opts.ValueDir = dir
 
-	db, err := badger.Open(opts)
-	if err != nil {
-		return nil, err
-	}
+  db, err := badger.Open(opts)
+  if err != nil {
+    return nil, err
+  }
 
-	dict := &Dictionary{
-		db: db,
-	}
-	return dict, nil
+  dict := &Dictionary{
+    db: db,
+  }
+  return dict, nil
 }
 
 func (d *Dictionary) Close() {
-	d.db.Close()
+  d.db.Close()
 }

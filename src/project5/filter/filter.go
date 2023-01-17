@@ -1,52 +1,52 @@
 package filter
 
 import (
-	"image/jpeg"
-	"os"
+  "image/jpeg"
+  "os"
 
-	"github.com/disintegration/imaging"
+  "github.com/disintegration/imaging"
 )
 
 type Filter interface {
-	Process(srcPath, dstPath string) error
+  Process(srcPath, dstPath string) error
 }
 
 type Grayscale struct{}
 
 func (g Grayscale) Process(srcPath, dstPath string) error {
-	src, err := imaging.Open(srcPath)
-	if err != nil {
-		return err
-	}
+  src, err := imaging.Open(srcPath)
+  if err != nil {
+    return err
+  }
 
-	dst := imaging.Grayscale(src)
+  dst := imaging.Grayscale(src)
 
-	dstFile, err := os.Create(dstPath)
-	if err != nil {
-		return err
-	}
-	defer dstFile.Close()
+  dstFile, err := os.Create(dstPath)
+  if err != nil {
+    return err
+  }
+  defer dstFile.Close()
 
-	opts := jpeg.Options{Quality: 90}
-	return jpeg.Encode(dstFile, dst, &opts)
+  opts := jpeg.Options{Quality: 90}
+  return jpeg.Encode(dstFile, dst, &opts)
 }
 
 type Blur struct{}
 
 func (b Blur) Process(srcPath, dstPath string) error {
-	src, err := imaging.Open(srcPath)
-	if err != nil {
-		return err
-	}
+  src, err := imaging.Open(srcPath)
+  if err != nil {
+    return err
+  }
 
-	dst := imaging.Blur(src, 3.5)
+  dst := imaging.Blur(src, 3.5)
 
-	dstFile, err := os.Create(dstPath)
-	if err != nil {
-		return err
-	}
-	defer dstFile.Close()
+  dstFile, err := os.Create(dstPath)
+  if err != nil {
+    return err
+  }
+  defer dstFile.Close()
 
-	opts := jpeg.Options{Quality: 90}
-	return jpeg.Encode(dstFile, dst, &opts)
+  opts := jpeg.Options{Quality: 90}
+  return jpeg.Encode(dstFile, dst, &opts)
 }
