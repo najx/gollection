@@ -25,4 +25,4 @@ If the dealer's score exceeds 21, the player wins. Otherwise, the winner will be
     . The max score for the game is 21.
     . When the deck ends, it will be re-initialized and shuffled again.
 
-![najx_blackjack_player_jocker_db355d7f-d657-4474-95a5-c2de822cbb39](https://user-images.githubusercontent.com/60783263/214822283-8a90907c-d83e-45f7-b525-ae20cf62c495.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/60783263/214822283-8a90907c-d83e-45f7-b525-ae20cf62c495.png" /></p>
