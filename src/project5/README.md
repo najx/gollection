@@ -22,13 +22,7 @@ src/project5
 
 Before running the application, ensure you have Go installed (version 1.16+ recommended).
 
-1. Clone the repository:
-
-````bash
-git clone https://github.com/username/GoImageProcessingAPI.git
-````
-
-2. Navigate into the `src/project5` directory:
+1. Navigate into the `src/project5` directory:
 
 ````bash
 cd src/project5
