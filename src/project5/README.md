@@ -31,7 +31,7 @@ git clone https://github.com/username/GoImageProcessingAPI.git
 2. Navigate into the `src/project5` directory:
 
 ````bash
-cd GoImageProcessingAPI/src/project5
+cd src/project5
 ````
 
 3. Run the server:
