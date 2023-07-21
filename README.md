@@ -93,7 +93,7 @@ To execute those programs, you simply need to have [Golang runtime](https://go.d
     └── login.html
  ````
 
-- __Project 7 ([Goflix](https://github.com/najx/gollection/tree/master/src/project7))__
+- __Project 7 ([Blackjack](https://github.com/najx/gollection/tree/master/src/project7))__
  ````
 ├── README.md
 └── blackjack.go
