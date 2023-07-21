@@ -34,12 +34,12 @@ The application uses the following data model:
 
 ## Endpoints
 
-**/login (GET)** - User login page.
-**/ (GET)** - Welcome page.
-**/api/token (POST)** - Endpoint for token generation. Users can provide their username and password, and receive a JWT token if their credentials are valid.
-**/api/movies/{id:[0-9]+} (GET)** - Fetches a specific movie by its ID. This endpoint requires authentication.
-**/api/movies/ (GET)** - Lists all movies. This endpoint requires authentication.
-**/api/movies/ (POST)** - Creates a new movie. This endpoint requires authentication.
+- **/login (GET)** - User login page.
+- **/ (GET)** - Welcome page.
+- **/api/token (POST)** - Endpoint for token generation. Users can provide their username and password, and receive a JWT token if their credentials are valid.
+- **/api/movies/{id:[0-9]+} (GET)** - Fetches a specific movie by its ID. This endpoint requires authentication.
+- **/api/movies/ (GET)** - Lists all movies. This endpoint requires authentication.
+- **/api/movies/ (POST)** - Creates a new movie. This endpoint requires authentication.
 
 ## Setup and Run
 
