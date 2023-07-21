@@ -45,16 +45,10 @@ The application uses the following data model:
 
 Before running the application, please ensure you have Go installed (version 1.16+ recommended).
 
-1. First, clone the repository:
+1. Navigate into the src/project6 directory:
 
 ````bash
-git clone https://github.com/username/GoMovieAPI.git
-````
-
-Then, navigate into the src/project6 directory:
-
-````bash
-cd GoMovieAPI/src/project6
+cd src/project6
 ````
 
 To run the server:
