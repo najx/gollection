@@ -76,6 +76,7 @@ To execute those programs, you simply need to have [Golang runtime](https://go.d
 
  ````
 ├── Makefile
+├── README.md
 ├── go.mod
 ├── go.sum
 ├── main.go
@@ -90,6 +91,12 @@ To execute those programs, you simply need to have [Golang runtime](https://go.d
 └── templates
     ├── base.html
     └── login.html
+ ````
+
+- __Project 7 ([Goflix](https://github.com/najx/gollection/tree/master/src/project7))__
+ ````
+├── README.md
+└── blackjack.go
  ````
 
 Want to try running a project ?
