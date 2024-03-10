@@ -6,7 +6,7 @@ Running the program
 To run the program, make sure you have Go installed and configured on your machine. Then, navigate to the directory containing the program and run the following command:
 
 ```go
-go run main.go
+go run blackjack.go
 ```
 
 ## Playing the game
